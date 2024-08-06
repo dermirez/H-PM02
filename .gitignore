@@ -1,1 +1,6 @@
 /back/
+/front/assests/
+/front/pages/
+/front/scripts/
+package-lock-json
+package.json
