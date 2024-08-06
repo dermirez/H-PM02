@@ -1,43 +1,83 @@
+/* Fonts */
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 1000 */
+
+.nunito-sans-nav-bar {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
 /* Header */
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #f8f8f8;
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  color: white;
 }
+
 .logo img {
-  height: 50px;
+  height: 40px;
 }
+
 .hamburger-menu button {
+  margin-left: 20px;
   font-size: 24px;
-  background: none;
   border: none;
   cursor: pointer;
 }
+
 .search-bar {
-  display: flex;
-  align-items: center;
+  flex: 1;
+  margin: 0 20px;
 }
+
 .search-bar input {
+  width: 100%;
   padding: 5px;
-  font-size: 16px;
+  border-radius: 4px;
+  border: none;
 }
-.search-bar button {
-  padding: 5px 10px;
-  font-size: 16px;
-  margin-left: 5px;
-}
-.navbar ul {
+
+.navigation-links ul {
   list-style: none;
   display: flex;
   gap: 15px;
+  margin: 0;
+  padding: 0;
 }
-.navbar a {
+
+.navigation-links a {
+  color: white;
   text-decoration: none;
-  font-size: 18px;
-  color: #333;
+}
+
+.navigation-links a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.user-options a {
+  color: white;
+  text-decoration: none;
+}
+
+.user-options a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+#pro-button-header {
+  margin-right: 10px;
+}
+
+.spacer {
+  margin: 0 10px;
 }
 
 /* Main */
