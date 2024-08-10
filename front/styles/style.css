@@ -11,6 +11,15 @@
   font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
+/* Ensure no margins or padding on html and body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Header */
 
 header {
@@ -90,23 +99,22 @@ header {
 
 /* Main */
 
-#carouselExampleCaptions {
+.main-container {
+  display: flex;
 }
 
-/* main {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-.content {
+.section-container {
   flex: 3;
-  padding-right: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/12/13/15/24/st-isaacs-cathedral-8447100_1280.jpg");
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Scales the image to cover the entire container */
+  background-position: center; /* Centers the image within the container */
 }
-.sidebar {
+
+.aside-container {
   flex: 1;
-  padding-left: 20px;
-  border-left: 1px solid #ccc;
-} */
+  background-color: rgb(251, 255, 0);
+}
 
 /* Footer */
 
